@@ -55,7 +55,7 @@ class HomeView: UIView {
         super.layoutSubviews()
 
         if #available(iOS 11.0, *) {
-            bottomConstraint?.constant = safeAreaInsets.bottom - 15
+            bottomConstraint?.constant = -(safeAreaInsets.bottom + 15)
         }
     }
 
